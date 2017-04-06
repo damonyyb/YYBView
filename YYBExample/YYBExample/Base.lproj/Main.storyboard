@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojm-HY-ROI">
+                                <rect key="frame" x="5" y="28" width="221" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="Nra-Fh-JAx"/>
+                                    <constraint firstAttribute="height" constant="30" id="eEz-5U-mSr"/>
+                                </constraints>
+                                <state key="normal" title="ShowBottomCustomSheetView1"/>
+                                <connections>
+                                    <action selector="showBottomCustomSheetView1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwv-nl-g8i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-Nx-dsS">
+                                <rect key="frame" x="5" y="66" width="223" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="Ikq-UJ-UMJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="WR6-vz-92R"/>
+                                </constraints>
+                                <state key="normal" title="ShowBottomCustomSheetView2"/>
+                                <connections>
+                                    <action selector="showBottomCustomSheetView2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIe-5v-cbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxG-hl-uPx">
+                                <rect key="frame" x="5" y="104" width="223" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ixx-dN-6lW"/>
+                                    <constraint firstAttribute="width" constant="223" id="RnU-da-RtU"/>
+                                </constraints>
+                                <state key="normal" title="showShowLoadingWithCircleRing"/>
+                                <connections>
+                                    <action selector="showShowLoadingWithCircleRingClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2i-Ud-2ZT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MC-qg-8HP">
+                                <rect key="frame" x="5" y="136" width="223" height="30"/>
+                                <state key="normal" title="ShowKnowInfoView"/>
+                                <connections>
+                                    <action selector="showKnowInfoViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rzd-UW-3pD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-Fb-rzr">
+                                <rect key="frame" x="5" y="174" width="223" height="30"/>
+                                <state key="normal" title="ShowLoadingWithCancel"/>
+                                <connections>
+                                    <action selector="showLoadingWithCancelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6T-Ie-wQW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-n8-GvA">
+                                <rect key="frame" x="5" y="212" width="223" height="30"/>
+                                <state key="normal" title="ShowLoadingCenterView"/>
+                                <connections>
+                                    <action selector="showLoadingCenterViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLS-7P-rfm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4MC-qg-8HP" firstAttribute="leading" secondItem="WxG-hl-uPx" secondAttribute="leading" id="4uO-FI-Cgy"/>
+                            <constraint firstItem="4MC-qg-8HP" firstAttribute="top" secondItem="WxG-hl-uPx" secondAttribute="bottom" constant="2" id="6mC-lo-5rP"/>
+                            <constraint firstItem="zXd-Nx-dsS" firstAttribute="top" secondItem="ojm-HY-ROI" secondAttribute="bottom" constant="8" id="HDn-kx-CY7"/>
+                            <constraint firstItem="ojm-HY-ROI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HZ7-CY-XLO"/>
+                            <constraint firstItem="sFw-n8-GvA" firstAttribute="trailing" secondItem="Pgc-Fb-rzr" secondAttribute="trailing" id="I8e-A8-qDc"/>
+                            <constraint firstItem="Pgc-Fb-rzr" firstAttribute="leading" secondItem="4MC-qg-8HP" secondAttribute="leading" id="Mn9-dC-37N"/>
+                            <constraint firstItem="Pgc-Fb-rzr" firstAttribute="top" secondItem="4MC-qg-8HP" secondAttribute="bottom" constant="8" symbolic="YES" id="Pcc-7I-5cR"/>
+                            <constraint firstItem="sFw-n8-GvA" firstAttribute="top" secondItem="Pgc-Fb-rzr" secondAttribute="bottom" constant="8" symbolic="YES" id="TdD-jC-6Ct"/>
+                            <constraint firstItem="WxG-hl-uPx" firstAttribute="top" secondItem="zXd-Nx-dsS" secondAttribute="bottom" constant="8" id="Zh9-hd-9Nb"/>
+                            <constraint firstItem="WxG-hl-uPx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="Zyy-Jb-FBc"/>
+                            <constraint firstItem="sFw-n8-GvA" firstAttribute="leading" secondItem="Pgc-Fb-rzr" secondAttribute="leading" id="esK-7F-RPB"/>
+                            <constraint firstItem="ojm-HY-ROI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="f60-l1-pNz"/>
+                            <constraint firstItem="zXd-Nx-dsS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="fql-78-LGZ"/>
+                            <constraint firstItem="4MC-qg-8HP" firstAttribute="trailing" secondItem="WxG-hl-uPx" secondAttribute="trailing" id="h3b-5g-Eok"/>
+                            <constraint firstItem="Pgc-Fb-rzr" firstAttribute="trailing" secondItem="4MC-qg-8HP" secondAttribute="trailing" id="zGt-tW-8Qb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

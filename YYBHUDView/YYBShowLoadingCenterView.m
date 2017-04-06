@@ -8,14 +8,15 @@
 
 #import "YYBShowLoadingCenterView.h"
 #import "UIView+TYAlertView.h"
+#import "Masonry.h"
 
 @implementation YYBShowLoadingCenterView
 
 - (instancetype)initWithTitle:(NSString *)title
 {
-    if (self = [super initWithFrame:CGRectMake(0, 0, 260, 148)]) {
+    if (self = [super initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width * 0.7, 148)]) {
         self.backgroundColor = [UIColor whiteColor];
-        self.tipsLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 88, 220, 40)];
+        self.tipsLabel = [UILabel new];
         self.tipsLabel.text = title;
         self.tipsLabel.textAlignment = NSTextAlignmentCenter;
         self.tipsLabel.numberOfLines = 0;
@@ -23,10 +24,19 @@
         self.tipsLabel.textColor = [self colorWithHex:0x3a4046];
         self.activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         self.activity.color = [self colorWithHex:0xAAAAAA];
-        self.activity.frame = CGRectMake(110, 27, 40, 40);
         [self addSubview:self.tipsLabel];
         [self addSubview:self.activity];
         self.layer.cornerRadius = 10.0;
+        [self.activity mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.height.equalTo(@(40));
+            make.top.equalTo(@(27));
+            make.centerX.equalTo(self);
+        }];
+        [self.tipsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(@(20));
+            make.right.equalTo(@(-20));
+            make.top.equalTo(self.activity.mas_bottom).offset(20);
+        }];
     }
     return self;
 }
